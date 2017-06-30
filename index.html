@@ -53,22 +53,17 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Locations<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li>
-                          <a href="#broadway">Broadway</a>
+                          <a href="/broadway">Broadway</a>
                         </li>
                         <li>
-                          <a href="#parker">Parker</a>
+                          <a href="/parker">Parker</a>
                         </li>
                       </ul>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,13 +74,13 @@
 
 
     <!-- Header -->
-    <header class="wide">
+    <header class="parallax">
       <div class="intro-message">
           <h1>Habibi Hookah<br>Cafe & Lounge</h1>
           <h3>Colorado's Original Hookah Lounge</h3>
       </div>
-      <a class="btn-primary call-to-action" href="#">Check out our locations!</a><br>
-      <a class="btn-default call-to-action" href="#">See our story!</a>
+      <a class="btn-primary call-to-action appear" href="#">Check out our locations!</a><br>
+      <a class="btn-default call-to-action appear" href="#">See our story!</a>
     </header>
 
 <!--
@@ -159,6 +154,8 @@
               4 pm - 2 am</p>
               <p class="right">Friday & Saturday<br>
               4 pm - 3 am</p>
+              <p class="address">1800 S Broadway<br>
+Denver, CO 80210</p>
               <a href="/broadway">
                 <img class="img-responsive" src="img/outsideCafe.jpg" alt="">
               </a>
@@ -167,6 +164,8 @@
               <h4>Parker</h4>
               <p>Sunday - Saturday<br>
                 2 pm - 2 am</p>
+                <p class="address">3124 S Parker Rd, Unit D<br>
+Aurora, CO 80014</p>
                 <a href="/parker">
                   <img class="img-responsive" src="http://i.imgur.com/DigKVHl.jpg" alt="">
                 </a>
@@ -227,16 +226,16 @@
           <div>
               <ul class="list-inline banner-social-buttons">
                   <li>
-                      <a href="https://facebook.com/Denversbesthookah" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                      <a href="https://facebook.com/Denversbesthookah" target="blank" class="btn btn-circle btn-lg hideme"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
                   </li>
                   <li>
-                      <a href="https://www.instagram.com/habibiloungeco/" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
+                      <a href="https://www.instagram.com/habibiloungeco/" target="blank" class="btn btn-circle btn-lg hideme"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
                   </li>
                   <li>
-                      <a href="https://www.yelp.com/biz/habibi-hookah-cafe-denver" data-toggle="tooltip" title="Broadway" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
+                      <a href="https://www.yelp.com/biz/habibi-hookah-cafe-denver" data-toggle="tooltip" title="Broadway" target="blank" class="btn btn-circle btn-lg hideme"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
                   </li>
                   <li>
-                      <a href="https://www.yelp.com/biz/habibi-hookah-lounge-aurora" data-toggle="tooltip" title="Parker" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
+                      <a href="https://www.yelp.com/biz/habibi-hookah-lounge-aurora" data-toggle="tooltip" title="Parker" target="blank" class="btn btn-circle btn-lg hideme"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
                   </li>
               </ul>
           </div>
@@ -262,16 +261,12 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#locations">Locations</a>
+                            <a href="#broadway">Broadway</a>
+                        </li>
+                        <li>
+                            <a href="#parker">Parker</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Habibi Hookah Cafe & Lounge 2017. All Rights Reserved</p>
                 </div>
@@ -286,14 +281,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!--- tooltip script !-->
     <script>
-      $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-      });
+
     </script>
     <script>
       function initMap() {
-        var habibiCafe = {lat: 39.684697, lng: -104.988557};
-        var habibiLounge = {lat:39.659262, lng: -104.849726};
+        var habibiCafe = {lat: 39.683815, lng: -104.987260};
+        var habibiLounge = {lat: 39.660114, lng: -104.850567};
         var center = {lat:39.706977, lng: -104.916975};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
@@ -310,7 +303,43 @@
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Y1zzx-_HTctdGKzB0a5rRdd-AAs_DPE&callback=initMap" async defer></script>
+    <script>$(document).ready(function() {
 
+    $(window).on('scroll');
+
+    var status = [];
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i, el){
+
+            if (status[i] !== 'showing') { // Makes sure that we haven't already done this item
+
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+
+                    $(this).animate({'opacity':'1'},1800);
+                    status[i] = 'showing';
+
+                    if ($('.hideme').index($(this)) + 1 === $('.hideme').length) {
+                        // We've shown them all, stop listening for scroll events!!!
+                        $(window).off('scroll');
+                      }
+                  }
+                }
+            });
+        });
+
+      $('[data-toggle="tooltip"]').tooltip();
+      $('.call-to-action:first').hide().show(1200);
+      $('.call-to-action:nth-of-type(2)').hide().show(1800);
+    });
+    </script>
 </body>
 
 </html>

@@ -77,10 +77,13 @@
         <!-- /.container -->
     </nav>
 
+    <!-- about parallax !-->
+    <div class="about-parallax"></div>
+
     <!-- Page Content -->
     <div id="about">
       <div class="container">
-        <h1>About Habibi Hookah <span class="red">Lounge</span> and <span class="black">Cafe</span></h1>
+        <h1>About <em>Habibi</em> Hookah <span class="red">Lounge</span> and <span class="black">Cafe</span></h1>
         <div class="row">
           <div class="col-sm-6">
             <div class="about-overlay">
@@ -93,14 +96,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
-            <img class="img-thumbnail" src="https://media.timeout.com/images/103137717/image.jpg">
-          </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-sm-push-6">
             <div class="about-overlay">
               <p>In 2016 Habibi expanded to a second location in Parker, which delivers a high-class hookah experience with the same quality and service expected with the Habibi name.  Both locations feature the largest selection of top-quality shisha available, with specially priced hookahs before 7.</p>
               <a class="button btn-default" href="#parker">Parker Location</a>
             </div>
+          </div>
+          <div class="col-sm-6 col-sm-pull-6">
+            <img class="img-thumbnail" src="https://media.timeout.com/images/103137717/image.jpg">
           </div>
         </div>
       </div>
@@ -120,7 +123,7 @@
 !-->
 
 
-
+    <div class="about-parallax"></div>
 
 
     <div id="selection">
@@ -143,6 +146,8 @@
         </div>
       </div>
     </div>
+
+    <div class="parallax"></div>
 
 
     <!-- Footer -->
@@ -182,6 +187,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Button Effects !-->
+    <script>
+    $(document).ready(function(){
+      $("#about a").hide().show('slow');
+    });
+    </script>
 
 </body>
 
