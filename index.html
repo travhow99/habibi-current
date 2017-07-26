@@ -19,8 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Bellefair|Berkshire+Swash|Eczar|Great+Vibes|Rakkas" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +43,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="/">Habibi Hookah Cafe</a>
+                <a class="navbar-brand topnav" href="/">Habibi Hookah</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -69,16 +68,53 @@
     </nav>
 
 
-    <!-- Header -->
+    <!-- Header
     <header class="parallax">
       <div class="intro-message">
-          <h1>Habibi Hookah<br>Cafe & Lounge</h1>
+          <h1>Habibi Hookah</h1>
           <h3>Colorado's Original Hookah Lounge</h3>
       </div>
       <a class="btn-primary call-to-action appear" href="#">Check out our locations!</a><br>
       <a class="btn-default call-to-action appear" href="#">See our story!</a>
     </header>
+ -->
+<header>
+  <div class="container-fluid">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/hero-image-compressor.jpeg" alt="Los Angeles" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/2008-11-08_Raisa_Sagdejeva_blowing_a_smoke_ring_at_Hookah_Bliss.jpg" alt="Chicago" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="http://i.imgur.com/VYvwrOj.jpg" alt="New York" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</header>
 <!--
     <div class="intro-header">
         <div class="container">
@@ -112,7 +148,7 @@
                     <div class="clearfix"></div>
                     <h4 class="section-heading">A MODERN HOOKAH EXPERIENCE</h4>
                     <p class="lead">Come join us at Colorado's oldest hookah lounge for the best music and atmosphere in town.  Habibi is open late and provides the most comfortable hookah lounge experience available.</p>
-                    <p class="lead">Whether you are looking to relax with some fresh tea or party with a live DJ, Habibi is the right place for you.  Check out both our locations below to decide where you want to join us tonight!</p>
+                    <p class="lead">Whether you are looking to relax with some fresh tea, Habibi is the right place for you.  Check out both our locations below to decide where you want to join us tonight!</p>
                 </div>
             </div>
 
@@ -237,25 +273,7 @@ Aurora, CO 80014</p>
                           <a href="parker.html">Parker</a>
                       </li>
                     </ul>
-                    <p class="copyright text-muted small">&copy; Habibi Hookah Cafe & Lounge 2017</p>
-            </div>
-            <div class="row">
-                <div>
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://facebook.com/Denversbesthookah" target="blank" class="btn btn-circle btn-sm"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/habibiloungeco/" target="blank" class="btn btn-circle btn-sm"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.yelp.com/biz/habibi-hookah-cafe-denver" data-toggle="tooltip" title="Broadway" target="blank" class="btn btn-circle btn-sm"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.yelp.com/biz/habibi-hookah-lounge-aurora" data-toggle="tooltip" title="Parker" target="blank" class="btn btn-circle btn-sm"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
-                        </li>
-                    </ul>
-                </div>
+                    <p class="copyright text-muted small">&copy; Habibi Hookah 2017</p>
             </div>
         </div>
     </footer>
@@ -285,7 +303,7 @@ Aurora, CO 80014</p>
         var marker2 = new google.maps.Marker({
         	position: habibiLounge,
           map: map
-        })
+        });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Y1zzx-_HTctdGKzB0a5rRdd-AAs_DPE&callback=initMap" async defer></script>

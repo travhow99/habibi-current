@@ -44,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Habibi Hookah Cafe</a>
+                <a class="navbar-brand topnav" href="/">Habibi Hookah Cafe</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,22 +53,13 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Locations<span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li>
-                          <a href="#broadway">Broadway</a>
-                        </li>
-                        <li>
-                          <a href="#parker">Parker</a>
-                        </li>
-                      </ul>
-                    <li>
-                        <a href="#services">Services</a>
+                        <a href="/about.html">About</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                      <a href="/broadway.html">Broadway</a>
+                    </li>
+                    <li>
+                      <a href="/parker.html">Parker</a>
                     </li>
                 </ul>
             </div>
@@ -85,95 +76,54 @@
       </div>
     </div>
 
-<<<<<<< HEAD
-    <div class="row">
-    <div id="contact" class="col-md-6">
-=======
-
     <div id="contact">
->>>>>>> 6a904d26d9ace8153583d15cde0c6593a4a222eb
-      <h3>Send Us a Message!</h3>
-      <form class="form-horizontal" role="form" method="post" action="index.php">
-      	<div class="form-group">
-      		<label for="name" class="col-sm-2 control-label">Name</label>
-      		<div class="col-sm-10">
-      			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-            <!-- <?php echo "<p class='text-danger'>$errName</p>"";?> !-->
-      		</div>
-      	</div>
-      	<div class="form-group">
-      		<label for="email" class="col-sm-2 control-label">Email</label>
-      		<div class="col-sm-10">
-      			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-            <!-- <?php echo "<p class='text-danger'>$errEmail</p>";?>" !-->
-      		</div>
-      	</div>
-      	<div class="form-group">
-      		<label for="message" class="col-sm-2 control-label">Message</label>
-      		<div class="col-sm-10">
-      			<textarea class="form-control" rows="4" name="message"></textarea>
-            <!-- <?php echo <p class='text-danger'>$errMessage</p>";?> !-->
-      		</div>
-      	</div>
-      	<div class="form-group">
-      		<div class="col-sm-10 col-sm-offset-2">
-      			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-      		</div>
-      	</div>
-        <div class="form-group">
-          <div class="col-sm-10 col-sm-offset-2">
-            <!-- <?php echo $result; ?> !-->
-          </div>
-        </div>
-      </form>
-    </div>
-<<<<<<< HEAD
-
-    <div id="contact-info" class="col-md-6">
-      <div id="contact-methods">
-        <h3>Or Reach Us Below</h3>
+      <div class="container-fluid">
         <div class="row">
-          <div>
-            <h5>Broadway</h5>
-            <ul>
-              <li>1800 S Broadway, Denver, CO 80210</li>
-              <li>(303) 993-4984</li>
-              <li class="yelp"><a href="https://www.yelp.com/biz/habibi-hookah-cafe-denver" target="blank" class="btn btn-default btn-lg"><i class="fa fa-yelp fa-fw"></i></a></li>
-            </ul>
+          <div class="col-sm-6">
+            <div id="large-map">
+              <div class="container">
+                <div id="map"></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5>Parker</h5>
-            <ul>
-              <li>3124 S Parker Rd, Aurora, CO 80014</li>
-              <li>(303) 353-9771</li>
-              <li class="yelp">
-                  <a href="https://www.yelp.com/biz/habibi-hookah-lounge-aurora" target="blank" class="btn btn-default btn-lg"><i class="fa fa-yelp fa-fw"></i></a>
-              </li>
-            </ul>
-          </div>
-          <a href="mailto:habibicafedenver@gmail.com">habibicafedenver@gmail.com</a>
-        </div>
-        <div class="container">
 
+        <div id="contact-info" class="col-sm-6">
+            <h3>Or Reach Us Below</h3>
             <div class="row">
-                <div class="col-lg-6">
+              <div class="col-sm-6">
+                <h4>Broadway</h4>
+                  <p>1800 S Broadway, Denver, CO 80210</p>
+                  <p>(303) 993-4984</p>
+              </div>
+              <div class="col-sm-6">
+                <h4>Parker</h4>
+                  <p>3124 S Parker Rd, Aurora, CO 80014</pp>
+                  <p>(303) 353-9771</p>
+              </div>
+            </div>
+            <div class="row">
+                <div>
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://facebook.com/Denversbesthookah" target="blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
+                            <a href="https://facebook.com/Denversbesthookah" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name"></span></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/habibiloungeco/" target="blank" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
+                            <a href="https://www.instagram.com/habibiloungeco/" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name"></span></a>
                         </li>
-
+                        <li>
+                            <a href="https://www.yelp.com/biz/habibi-hookah-cafe-denver" data-toggle="tooltip" title="Broadway" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.yelp.com/biz/habibi-hookah-lounge-aurora" data-toggle="tooltip" title="Parker" target="blank" class="btn btn-circle btn-lg"><i class="fa fa-yelp fa-fw"></i> <span class="network-name"></span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-
         </div>
       </div>
     </div>
-=======
->>>>>>> 6a904d26d9ace8153583d15cde0c6593a4a222eb
+  </div>
+
     <!-- /.banner -->
 
     <!-- Footer -->
@@ -206,10 +156,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-      </div>
-=======
->>>>>>> 6a904d26d9ace8153583d15cde0c6593a4a222eb
     </footer>
 
     <!-- jQuery -->
@@ -217,6 +163,27 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      function initMap() {
+        var habibiCafe = {lat: 39.683815, lng: -104.987260};
+        var habibiLounge = {lat: 39.660114, lng: -104.850567};
+        var center = {lat:39.706977, lng: -104.916975};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: center
+        });
+        var marker = new google.maps.Marker({
+          position: habibiCafe,
+          map: map
+        });
+        var marker2 = new google.maps.Marker({
+          position: habibiLounge,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Y1zzx-_HTctdGKzB0a5rRdd-AAs_DPE&callback=initMap" async defer></script>
+
 
 </body>
 
