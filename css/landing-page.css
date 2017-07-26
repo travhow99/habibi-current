@@ -114,6 +114,21 @@ header .active {
   padding-bottom: 0px;
 }
 
+.header-buttons {
+  position: relative;
+}
+
+.header-buttons a {
+  top: 180px;
+  left: 154px;
+  z-index: 10;
+  position: absolute;
+}
+
+.header-buttons a:nth-of-type(2) {
+  top: 220px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
