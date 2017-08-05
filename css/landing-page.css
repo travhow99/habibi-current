@@ -288,6 +288,30 @@ header .active {
   padding-bottom: 72px;
 }
 
+#locations-new {
+  background-color: black;
+}
+
+#locations-new .well {
+  background-color: grey;
+  padding: 0px;
+  margin-bottom: 0px;
+  border: none;
+}
+
+#locations-new img {
+  border-radius: 4px 0px 0px 4px;
+}
+
+#locations-new h3 {
+  font-size: 42px;
+  text-align: center;
+}
+
+#locations-new p {
+  font-size: 18px;
+}
+
 .location {
   position: static;
 }
